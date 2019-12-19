@@ -11,7 +11,7 @@ import EditorTools from './components/EditorTools';
 
 import HomePage from './pages/Home';
 import burgerMenu from './components/Header';
-
+import Footer from './components/Footer';
 class App extends Component {
     async componentDidMount() {
         this.props.updateStaticContent();
@@ -26,7 +26,8 @@ class App extends Component {
                     <main className="App--main">
                         <HomePage />
                     </main>
-                    <EditorTools />
+                    <Footer />
+                    {/* <EditorTools /> */}
                 </div>
             </Router>
         );

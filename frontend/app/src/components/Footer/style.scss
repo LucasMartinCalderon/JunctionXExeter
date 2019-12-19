@@ -1,0 +1,157 @@
+@import '../../styles/variables';
+.FooterDivider {
+    height: 10px;
+}
+
+.Footer {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 140px 50px;
+    background: $white;
+
+    .FooterInner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include bp-full {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 320px;
+
+            @include bp-full {
+                align-items: flex-start;
+            }
+
+            &__logo {
+                width: 100%;
+            }
+
+            &__slogan {
+                color: $black;
+                font-size: 18px;
+                text-align: center;
+
+                @include bp-full {
+                    text-align: left;
+                }
+            }
+
+            &__contact {
+                color: $black;
+                text-decoration: none;
+                font-size: 18px;
+                text-align: center;
+
+                @include bp-full {
+                    text-align: left;
+                }
+            }
+        }
+
+        &--separator {
+            margin-top: 20px;
+            // height: 150px;
+            // width: 2px;
+            // margin-left: 110px;
+            // margin-right: 110px;
+            background: $lightgrey;
+
+            width: 290px;
+            height: 2px;
+            margin: 60px 0;
+            @include bp-med {
+                width: 320px;
+            }
+
+            @include bp-full {
+                height: 150px;
+                width: 2px;
+                margin: 0 90px;
+            }
+        }
+
+        &--right {
+            display: flex;
+
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-self: stretch;
+
+            @include bp-full {
+                justify-content: flex-start;
+            }
+
+            &__section {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                width: 100%;
+                max-width: 200px;
+                min-width: 150px;
+                align-items: center;
+
+                @include bp-full {
+                    align-items: flex-start;
+                    flex: 1;
+                    margin-right: $padding-double;
+                }
+
+                &-title {
+                    color: rgba($black, 0.4);
+                    margin-top: 0;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 16px;
+
+                    @include bp-full {
+                        text-align: left;
+                    }
+                }
+
+                &-link {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+
+                    @include bp-full {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .FooterBottom {
+        width: 100%;
+        max-width: 1200px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 140px;
+
+        &--text {
+            @extend %font-title;
+            color: rgba($black, 0.4);
+        }
+    }
+}

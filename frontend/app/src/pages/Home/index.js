@@ -15,7 +15,7 @@ import GradientLink from '../../components/GradientLink';
 
 const HomePage = ({ getText, getMedia }) => {
     return (
-        <div className="HomePage">  
+        <div className="HomePage">
             <HeroImage image={getMedia('homePageHeaderImage')}>
                 <Image
                     className="HomePage--logo"
@@ -26,22 +26,42 @@ const HomePage = ({ getText, getMedia }) => {
                 <h2 className="HomePage--title">{getText('homePageHeroCtaSubtitle')}</h2>
                 <Divider size="md" />
                 <video className='videoTag' autoPlay loop muted>
-                <source src={video1} type='video/mp4' />
-                </video>  
+                    <source src={video1} type='video/mp4' />
+                </video>
                 <GradientLink href="https://docs.google.com/forms/d/e/1FAIpQLSeZbCJwzt3ONvPElB3uKT6cq-W5u-eW8FfqP4ozQWS6Yg6LBg/viewform" text="PARTICIPANT APPLICATION" class="button1" />
                 <Divider size="md" />
-                <GradientLink href="https://exeentrepreneursoc.typeform.com/to/CxaMhe" text="VOLUNTEER APPLICATION" class="button2"/>
+                <GradientLink href="https://exeentrepreneursoc.typeform.com/to/CxaMhe" text="VOLUNTEER APPLICATION" class="button2" />
             </HeroImage>
             <SingleColumnSection title="Europe's leading network of hackathons is taking over the UK for the first time!" />
             <Divider size="lg" />
             <TwoColumnSection
                 title="This is JunctionX Exeter."
-                subtitle="Hackathon = The goal of a hackathon is to gather, network, build and create a functioning product or idea by the end of the event."
+                subtitle="The goal of a hackathon is to gather, network, build and create a functioning product or idea by the end of the event. One of the largest UK university hackathons with over 300 participants. The event will be held on 21-23 February 2020. Our sponsors have created various Challenges you can choose from! You have 52 hours to create an exciting solution to your Challenge."
             >
                 <Markdown source={getText('homePageIntroText')} />
             </TwoColumnSection>
             <Divider size="lg" />
-            <SingleColumnSection title="Our Partners" subtitle="Check out some of our partners:">
+            <SingleColumnSection title="Challenges" subtitle="These are the 2020 JunctionX Exeter Challenges.">
+                <Markdown source={getText('homePageIntroText')} />
+            </SingleColumnSection>
+            <Divider size="lg" />
+
+            <SingleColumnSection title="Schedule" subtitle="Check out some of our partners:">
+                <Markdown source={getText('homePageIntroText')} />
+            </SingleColumnSection>
+            <Divider size="lg" />
+
+            <SingleColumnSection title="Team" subtitle="Check out some of our partners:">
+                <Markdown source={getText('homePageIntroText')} />
+            </SingleColumnSection>
+            <Divider size="lg" />
+
+            <SingleColumnSection title="Venue" subtitle="Check out some of our partners:">
+                <Markdown source={getText('homePageIntroText')} />
+            </SingleColumnSection>
+            <Divider size="lg" />
+
+            <SingleColumnSection title="Sponsors" subtitle="Check out some of our partners:">
                 <Markdown source={getText('homePageIntroText')} />
             </SingleColumnSection>
             <Divider size="lg" />
