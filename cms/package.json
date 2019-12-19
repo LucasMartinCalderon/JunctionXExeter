@@ -1,0 +1,55 @@
+{
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "find-config": "^1.0.0",
+    "lodash": "^4.17.5",
+    "strapi": "3.0.0-beta.7",
+    "strapi-admin": "3.0.0-beta.7",
+    "strapi-hook-mongoose": "3.0.0-beta.7",
+    "strapi-plugin-content-manager": "^3.0.0-beta.7",
+    "strapi-plugin-content-type-builder": "^3.0.0-beta.7",
+    "strapi-plugin-email": "^3.0.0-beta.7",
+    "strapi-plugin-graphql": "^3.0.0-beta.7",
+    "strapi-plugin-settings-manager": "^3.0.0-beta.7",
+    "strapi-plugin-upload": "^3.0.0-beta.7",
+    "strapi-plugin-users-permissions": "^3.0.0-beta.7"
+  },
+  "author": {
+    "name": "juuso",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "juuso",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "uuid": "6b935fbf-0250-476f-98ac-9e921be86a91"
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.SingleColumnSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            margin: 0;
+            font-size: 40px;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        &__subtitle {
+            * {
+                text-align: center !important;
+            }
+        }
+    }
+}

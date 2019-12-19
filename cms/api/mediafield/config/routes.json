@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mediafields",
+      "handler": "Mediafield.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediafields/count",
+      "handler": "Mediafield.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediafields/:_id",
+      "handler": "Mediafield.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mediafields",
+      "handler": "Mediafield.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mediafields/:_id",
+      "handler": "Mediafield.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mediafields/:_id",
+      "handler": "Mediafield.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

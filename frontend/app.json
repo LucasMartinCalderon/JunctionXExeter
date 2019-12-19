@@ -1,0 +1,12 @@
+{
+	"name": "<name in package.json>",
+	"repository": "<url of your repository>",
+	"buildpacks": [
+		{
+			"url": "https://github.com/heroku/heroku-buildpack-nodejs"
+		}
+	],
+	"env": {
+		"NPM_CONFIG_PRODUCTION": true
+	}
+}

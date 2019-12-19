@@ -1,0 +1,27 @@
+{
+    "name": "awesome-site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup": "npm install && npm run setup-cms && npm run setup-frontend",
+        "setup-cms": "cd cms && npm install",
+        "setup-frontend": "cd frontend && npm run setup",
+        "dev": "npm-run-all --parallel dev-frontend dev-cms",
+        "dev-cms": "cd cms && strapi develop",
+        "dev-frontend": "cd frontend && npm run dev"
+    },
+    "author": "Lucas Martin Calderon",
+    "license": "ISC",
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "dependencies": {
+        "react-burger-menu": "^1.1.6",
+        "strapi": "^3.0.0-beta.18.1"
+    }
+}

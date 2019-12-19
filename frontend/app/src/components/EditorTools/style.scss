@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.EditorOverlay {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+
+    &--inner {
+        background: $lightgrey;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    &--title {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        cursor: pointer;
+        user-select: none;
+        color: $black;
+        background: rgba($black, 0.2);
+    }
+
+    &-expanded {
+        .EditorOverlay--tools {
+            height: 200px;
+        }
+    }
+
+    &--tools {
+        transition: height 0.2s ease;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    &--option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba($black, 0.1);
+
+        span {
+            color: $black;
+            margin-right: 10px;
+        }
+    }
+}

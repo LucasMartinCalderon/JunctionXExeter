@@ -1,0 +1,26 @@
+$bp-small: 600px;
+$bp-med: 900px;
+$bp-full: 1200px;
+
+@mixin bp-small-only {
+    @media (max-width: $bp-med - 1) {
+        @content;
+    }
+}
+
+@mixin bp-med {
+    @media (min-width: $bp-med) {
+        @content;
+    }
+}
+
+@mixin bp-full {
+    @media (min-width: $bp-full) {
+        @content;
+    }
+}
+
+$padding-base: 10px;
+$padding-double: 20px;
+$padding-page: 30px;
+$content-max-width: 980px;

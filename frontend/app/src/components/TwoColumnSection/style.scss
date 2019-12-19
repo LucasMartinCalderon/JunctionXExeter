@@ -1,0 +1,69 @@
+@import '../../styles/variables.scss';
+
+.TwoColumnSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include bp-full {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &--left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include bp-full {
+            margin-right: 25px;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 40px;
+            text-align: center;
+            word-break: break-word;
+
+            @include bp-full {
+                text-align: left;
+            }
+        }
+
+        &__subtitle {
+            * {
+                text-align: center !important;
+            }
+
+            @include bp-full {
+                * {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+
+    &--divider {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &--right {
+        flex: 2;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include bp-full {
+            margin-left: 25px;
+            margin-top: 0;
+        }
+
+        & > p {
+            margin: 0;
+        }
+    }
+}

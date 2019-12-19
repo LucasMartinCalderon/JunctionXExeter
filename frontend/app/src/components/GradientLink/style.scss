@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.GradientLink {
+    @extend %font-title;
+    max-width: 470px;
+    width: 100%;
+    padding: 18px 30px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+
+    @include bp-med {
+        padding: 18px 40px;
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 600px;
+    }
+
+    &-default {
+        background: rgba($purple, 0.27);
+        background: linear-gradient(138deg, rgba($purple, 0.3) 0%, rgba($purple, 0.2) 100%);
+    }
+
+    &-orange {
+        background: rgba($orange, 0.27);
+        background: linear-gradient(145deg, rgba($orange, 0.23) 0%, rgba(#7a4100, 0.22) 100%);
+    }
+}

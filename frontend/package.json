@@ -1,0 +1,23 @@
+{
+  "name": "awesome-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Martin Calderon",
+  "license": "MIT",
+  "scripts": {
+    "setup": "npm install && cd app && npm install",
+    "dev": "cd app && npm start",
+    "heroku-postbuild": "cd app && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

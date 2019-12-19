@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "mediafield",
+  "info": {
+    "name": "mediafield",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "key": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

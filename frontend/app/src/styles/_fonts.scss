@@ -1,0 +1,42 @@
+@import 'sizes';
+@import 'colors';
+
+$font-title: 'Montserrat', sans-serif;
+$font-body: 'Lato', sans-serif;
+
+%font-title {
+    font-family: $font-title;
+    color: $text-light-primary;
+}
+
+%font-body {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-light-primary;
+    text-align: left;
+
+    @include bp-full {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+    }
+}
+
+%font-secondary {
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-light-secondary;
+}
+
+%font-input {
+    font-family: $font-body;
+    font-size: 16px;
+    color: $text-light-primary;
+}
+
+%font-link {
+    color: $accent;
+    cursor: pointer;
+    text-decoration: none;
+}

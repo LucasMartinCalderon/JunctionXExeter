@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/textfields",
+      "handler": "Textfield.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/textfields/count",
+      "handler": "Textfield.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/textfields/:_id",
+      "handler": "Textfield.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/textfields",
+      "handler": "Textfield.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/textfields/:_id",
+      "handler": "Textfield.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/textfields/:_id",
+      "handler": "Textfield.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
