@@ -22,6 +22,6 @@
     },
     "dependencies": {
         "react-burger-menu": "^1.1.6",
-        "strapi": "^3.0.0-beta.18.1"
+        "strapi": "^3.2.5"
     }
 }
